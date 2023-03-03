@@ -1,0 +1,83 @@
+.card__Cargando {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__detail {
+  margin: 3rem;
+  gap: 4rem;
+  background: #10b8b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 0px 2px #068d31c5, 0px 2px 0px 2px #068d31c5,
+    -25px -3px 39px 30px #068d31c5;
+}
+
+.container__detail img {
+  width: 29rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+.container__info {
+  margin-left: 10px;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+}
+.container__info p {
+  margin-bottom: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  color: rgb(35, 34, 34);
+}
+
+.btn__volver {
+  background: transparent;
+  border: none;
+  color: #312f2f;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-size: 1.5rem;
+}
+.btn__volver:hover {
+  color: #1b1a1a;
+}
+.div__episodios {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 3rem 3rem 3rem;
+}
+.div__episodios h2 {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+}
+.container__episodios button {
+  background-color: #10b8b3;
+  border-color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container__episodios button:hover {
+  background: #0d918d;
+}
+
+@media (max-width: 649px) {
+  .btn__volver {
+    margin-top: 3rem;
+  }
+  .container__detail img {
+    border-radius: 0;
+
+    border-radius: inherit;
+  }
+  .container__info p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+}

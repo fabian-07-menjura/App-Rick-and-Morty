@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/rick-morty",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+.card__Cargando {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__episodio {
+  padding: 30px 10px;
+  margin: 3rem;
+  gap: 4rem;
+  background: #10b8b3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 0px 2px #068d31c5, 0px 2px 0px 2px #068d31c5,
+    -25px -3px 39px 30px #068d31c5;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-size: 1.5rem;
+  color: #312f2f;
+}
+.container__infEpisodio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem;
+}
+.container__episodio p {
+  margin: 10px;
+}
+
+.container__personajes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.container__personajes div img {
+  height: 8rem;
+  width: 8rem;
+}
+
+@media (max-width: 920px) {
+  .container__infEpisodio {
+    flex-direction: row;
+  }
+}

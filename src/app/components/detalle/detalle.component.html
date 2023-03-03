@@ -1,0 +1,26 @@
+<button class="btn__volver" [routerLink]="['/home']">< Back</button>
+<div *ngIf="personaje.length; else cargando">
+  <div class="container__detail">
+    <img src="{{ personaje[0].image }}" alt="" />
+
+    <div class="container__info">
+      <p>Name: {{ personaje[0].name }}</p>
+      <p>Specie: {{ personaje[0].species }}</p>
+      <p>Status: {{ personaje[0].status }}</p>
+      <p>Created: {{ personaje[0].created }}</p>
+      <p>Origin: {{ personaje[0].origin.name }}</p>
+      <p>Locarion: {{ personaje[0].location.name }}</p>
+    </div>
+  </div>
+
+  <div class="div__episodios">
+    <div *ngFor="let e of personaje[0].episode" class="container__episodios">
+      <button (click)="mostrarId(e)">{{ e | numEpisodio }}</button>
+    </div>
+  </div>
+</div>
+<ng-template #cargando class="cargando">
+  <div class="card__Cargando">
+    <app-cargando></app-cargando>
+  </div>
+</ng-template>

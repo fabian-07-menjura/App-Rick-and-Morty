@@ -1,0 +1,31 @@
+<div *ngIf="userEpisodio.length; else cargando" class="container__episodio">
+  <div class="container__infEpisodio">
+    <p>
+      Episode: <br />
+      {{ infoEpisodio[0].id }}
+    </p>
+    <p>
+      Name: <br />
+      {{ infoEpisodio[0].name }}
+    </p>
+    <p>
+      Air_date: <br />
+      {{ infoEpisodio[0].air_date }}
+    </p>
+    <p>
+      Created: <br />
+      {{ infoEpisodio[0].created }}
+    </p>
+  </div>
+
+  <div class="container__personajes">
+    <div *ngFor="let e of userEpisodio">
+      <img src="{{ e }}" alt="imagen de usauario" />
+    </div>
+  </div>
+</div>
+<ng-template #cargando class="cargando">
+  <div class="card__Cargando">
+    <app-cargando></app-cargando>
+  </div>
+</ng-template>

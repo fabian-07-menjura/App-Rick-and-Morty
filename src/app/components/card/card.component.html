@@ -1,0 +1,22 @@
+<div *ngIf="info.length; else cargando" class="div__cards">
+  <app-paginado (pagina)="solicitarPagina($event)"></app-paginado>
+  <div class="container__cards">
+    <div class="card__info" *ngFor="let e of info">
+      <div class="div__imagen">
+        <img
+          class="imagen"
+          src="{{ e.image }}"
+          alt=""
+          (click)="detalleCard(e.id)"
+        />
+      </div>
+      <h2>{{ e.name }}</h2>
+      <h3>{{ e.species }}</h3>
+    </div>
+  </div>
+</div>
+<ng-template #cargando class="cargando">
+  <div class="card__Cargando">
+    <app-cargando></app-cargando>
+  </div>
+</ng-template>

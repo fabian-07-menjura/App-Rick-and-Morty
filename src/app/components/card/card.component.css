@@ -1,0 +1,73 @@
+.div__cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  justify-content: center;
+  margin: 2rem;
+}
+
+.container__cards {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.5rem;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 2rem;
+}
+.card__info {
+  align-items: center;
+  background: #10b8b3;
+  border-radius: 1rem;
+  box-shadow: 0px 3px 0px 2px #068d31c5, 0px 2px 0px 2px #068d31c5,
+    -25px -3px 39px 30px #068d31c5;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  margin: 5.5rem 0;
+  width: 15rem;
+}
+
+.card__info img {
+  border-radius: 1rem;
+  height: 10rem;
+  width: 10rem;
+}
+
+.div__imagen {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 18rem;
+}
+.imagen {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s;
+  width: 100%;
+}
+.imagen:hover {
+  cursor: pointer;
+}
+.div__imagen:hover img {
+  transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+.card__info h2 {
+  color: rgb(44, 42, 42);
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+  font-weight: bold;
+  margin: 2rem 0;
+}
+.card__info h3 {
+  color: rgb(71, 69, 69);
+  font-size: 1.3rem;
+}
+
+.card__Cargando {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

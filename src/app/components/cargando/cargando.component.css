@@ -1,0 +1,18 @@
+.card__cargando {
+  margin: 7rem 0;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card__cargando img {
+  max-width: 100%;
+}
+
+.card__cargando h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}

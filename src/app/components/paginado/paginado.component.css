@@ -1,0 +1,23 @@
+.container__paginacion {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn__paginacion {
+  background: transparent;
+  border: none;
+  color: #312f2f;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.btn__paginacion:hover {
+  color: #232222;
+}
+
+.etktP {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: #312f2f;
+}
