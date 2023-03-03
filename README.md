@@ -24,7 +24,7 @@ npm start
 funcionalidades:
 
 - Ver personajes de la serie Rick and Morty
-- Ver descripcion de cada pesonaje
+- Ver descripcion de cada personaje
 - Conocer en que episodios estuvo cada personaje
 
 
